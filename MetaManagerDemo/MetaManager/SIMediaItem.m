@@ -151,7 +151,7 @@
     [[AVAssetExportSession alloc] initWithAsset:self.asset
                                      presetName:presetName];
     
-    NSURL *outputURL = [self tempURL];                                      // 2
+    NSURL *outputURL = [self tempURL];
     session.outputURL = outputURL;
     session.outputFileType = self.filetype;
     session.metadata = [self.metadata metadataItems];                       // 3
@@ -162,8 +162,8 @@
         if (success) {                                                      // 4
             NSURL *sourceURL = self.url;
             NSFileManager *manager = [NSFileManager defaultManager];
-            [manager removeItemAtURL:sourceURL error:nil];
-            [manager moveItemAtURL:outputURL toURL:sourceURL error:nil];
+            [manager removeItemAtURL:outputURL error:nil];
+            [manager copyItemAtURL:sourceURL toURL:outputURL error:nil];
             [self reset];                                                   // 5
         }
         

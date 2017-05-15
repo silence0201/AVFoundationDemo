@@ -13,14 +13,14 @@
 		E847324E1ECA026500D5ED12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E847324C1ECA026500D5ED12 /* Main.storyboard */; };
 		E84732501ECA026500D5ED12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E847324F1ECA026500D5ED12 /* Assets.xcassets */; };
 		E84732531ECA026500D5ED12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E84732511ECA026500D5ED12 /* LaunchScreen.storyboard */; };
-		E847325D1ECA031C00D5ED12 /* SIMetadataConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E847325C1ECA031C00D5ED12 /* SIMetadataConverter.m */; };
-		E84732601ECA037900D5ED12 /* SIMetadataConverterFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = E847325F1ECA037900D5ED12 /* SIMetadataConverterFactory.m */; };
-		E84732631ECA053000D5ED12 /* SIMetadataKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = E84732621ECA053000D5ED12 /* SIMetadataKeys.m */; };
 		E84732661ECA064000D5ED12 /* SIGenre.m in Sources */ = {isa = PBXBuildFile; fileRef = E84732651ECA064000D5ED12 /* SIGenre.m */; };
 		E84732691ECA07F400D5ED12 /* SIMetadata.m in Sources */ = {isa = PBXBuildFile; fileRef = E84732681ECA07F400D5ED12 /* SIMetadata.m */; };
 		E847326C1ECA09E500D5ED12 /* SIMediaItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E847326B1ECA09E500D5ED12 /* SIMediaItem.m */; };
 		E847326F1ECA0E0F00D5ED12 /* Demo.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E847326E1ECA0DF900D5ED12 /* Demo.m4a */; };
 		E84732721ECA112700D5ED12 /* NSObject+AutoCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = E84732711ECA112700D5ED12 /* NSObject+AutoCoding.m */; };
+		E847327A1ECA128300D5ED12 /* SIMetadataConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E84732751ECA128300D5ED12 /* SIMetadataConverter.m */; };
+		E847327B1ECA128300D5ED12 /* SIMetadataConverterFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = E84732771ECA128300D5ED12 /* SIMetadataConverterFactory.m */; };
+		E847327C1ECA128300D5ED12 /* SIMetadataKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = E84732791ECA128300D5ED12 /* SIMetadataKeys.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,12 +34,6 @@
 		E847324F1ECA026500D5ED12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E84732521ECA026500D5ED12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E84732541ECA026500D5ED12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E847325B1ECA029F00D5ED12 /* SIMetadataConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIMetadataConverter.h; sourceTree = "<group>"; };
-		E847325C1ECA031C00D5ED12 /* SIMetadataConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIMetadataConverter.m; sourceTree = "<group>"; };
-		E847325E1ECA037900D5ED12 /* SIMetadataConverterFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIMetadataConverterFactory.h; sourceTree = "<group>"; };
-		E847325F1ECA037900D5ED12 /* SIMetadataConverterFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIMetadataConverterFactory.m; sourceTree = "<group>"; };
-		E84732611ECA053000D5ED12 /* SIMetadataKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIMetadataKeys.h; sourceTree = "<group>"; };
-		E84732621ECA053000D5ED12 /* SIMetadataKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIMetadataKeys.m; sourceTree = "<group>"; };
 		E84732641ECA064000D5ED12 /* SIGenre.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIGenre.h; sourceTree = "<group>"; };
 		E84732651ECA064000D5ED12 /* SIGenre.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIGenre.m; sourceTree = "<group>"; };
 		E84732671ECA07F400D5ED12 /* SIMetadata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIMetadata.h; sourceTree = "<group>"; };
@@ -49,6 +43,12 @@
 		E847326E1ECA0DF900D5ED12 /* Demo.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Demo.m4a; sourceTree = "<group>"; };
 		E84732701ECA112700D5ED12 /* NSObject+AutoCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+AutoCoding.h"; sourceTree = "<group>"; };
 		E84732711ECA112700D5ED12 /* NSObject+AutoCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+AutoCoding.m"; sourceTree = "<group>"; };
+		E84732741ECA128300D5ED12 /* SIMetadataConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIMetadataConverter.h; sourceTree = "<group>"; };
+		E84732751ECA128300D5ED12 /* SIMetadataConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIMetadataConverter.m; sourceTree = "<group>"; };
+		E84732761ECA128300D5ED12 /* SIMetadataConverterFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIMetadataConverterFactory.h; sourceTree = "<group>"; };
+		E84732771ECA128300D5ED12 /* SIMetadataConverterFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIMetadataConverterFactory.m; sourceTree = "<group>"; };
+		E84732781ECA128300D5ED12 /* SIMetadataKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIMetadataKeys.h; sourceTree = "<group>"; };
+		E84732791ECA128300D5ED12 /* SIMetadataKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIMetadataKeys.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,12 +109,7 @@
 		E847325A1ECA027E00D5ED12 /* MetaManager */ = {
 			isa = PBXGroup;
 			children = (
-				E847325B1ECA029F00D5ED12 /* SIMetadataConverter.h */,
-				E847325C1ECA031C00D5ED12 /* SIMetadataConverter.m */,
-				E847325E1ECA037900D5ED12 /* SIMetadataConverterFactory.h */,
-				E847325F1ECA037900D5ED12 /* SIMetadataConverterFactory.m */,
-				E84732611ECA053000D5ED12 /* SIMetadataKeys.h */,
-				E84732621ECA053000D5ED12 /* SIMetadataKeys.m */,
+				E84732731ECA128300D5ED12 /* Converter */,
 				E84732641ECA064000D5ED12 /* SIGenre.h */,
 				E84732651ECA064000D5ED12 /* SIGenre.m */,
 				E84732671ECA07F400D5ED12 /* SIMetadata.h */,
@@ -131,6 +126,19 @@
 				E847326E1ECA0DF900D5ED12 /* Demo.m4a */,
 			);
 			path = Media;
+			sourceTree = "<group>";
+		};
+		E84732731ECA128300D5ED12 /* Converter */ = {
+			isa = PBXGroup;
+			children = (
+				E84732741ECA128300D5ED12 /* SIMetadataConverter.h */,
+				E84732751ECA128300D5ED12 /* SIMetadataConverter.m */,
+				E84732761ECA128300D5ED12 /* SIMetadataConverterFactory.h */,
+				E84732771ECA128300D5ED12 /* SIMetadataConverterFactory.m */,
+				E84732781ECA128300D5ED12 /* SIMetadataKeys.h */,
+				E84732791ECA128300D5ED12 /* SIMetadataKeys.m */,
+			);
+			path = Converter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,14 +213,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E847327C1ECA128300D5ED12 /* SIMetadataKeys.m in Sources */,
 				E847326C1ECA09E500D5ED12 /* SIMediaItem.m in Sources */,
-				E84732601ECA037900D5ED12 /* SIMetadataConverterFactory.m in Sources */,
 				E847324B1ECA026500D5ED12 /* ViewController.m in Sources */,
-				E84732631ECA053000D5ED12 /* SIMetadataKeys.m in Sources */,
 				E84732661ECA064000D5ED12 /* SIGenre.m in Sources */,
 				E84732691ECA07F400D5ED12 /* SIMetadata.m in Sources */,
-				E847325D1ECA031C00D5ED12 /* SIMetadataConverter.m in Sources */,
 				E84732481ECA026500D5ED12 /* AppDelegate.m in Sources */,
+				E847327A1ECA128300D5ED12 /* SIMetadataConverter.m in Sources */,
+				E847327B1ECA128300D5ED12 /* SIMetadataConverterFactory.m in Sources */,
 				E84732721ECA112700D5ED12 /* NSObject+AutoCoding.m in Sources */,
 				E84732451ECA026500D5ED12 /* main.m in Sources */,
 			);

@@ -25,8 +25,15 @@
         if (complete) {
             NSLog(@"%@",mediaItem.dictionaryRepresentation) ;
             NSLog(@"%@",mediaItem.metadata.dictionaryRepresentation) ;
+            [mediaItem saveWithCompletionHandler:^(BOOL complete) {
+                if (complete) {
+                    NSLog(@"保存成功") ;
+                }
+            }];
         }
     }] ;
+    
+
 }
 
 
