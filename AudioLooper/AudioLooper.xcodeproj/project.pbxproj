@@ -1,0 +1,376 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E884FB8A1EC9B7150014A608 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E884FB891EC9B7150014A608 /* main.m */; };
+		E884FB8D1EC9B7150014A608 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E884FB8C1EC9B7150014A608 /* AppDelegate.m */; };
+		E884FB901EC9B7150014A608 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E884FB8F1EC9B7150014A608 /* ViewController.m */; };
+		E884FB931EC9B7150014A608 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E884FB911EC9B7150014A608 /* Main.storyboard */; };
+		E884FB951EC9B7150014A608 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E884FB941EC9B7150014A608 /* Assets.xcassets */; };
+		E884FB981EC9B7150014A608 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E884FB961EC9B7150014A608 /* LaunchScreen.storyboard */; };
+		E884FBA21EC9B75D0014A608 /* UIColor+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = E884FBA11EC9B75D0014A608 /* UIColor+Additions.m */; };
+		E884FBA51EC9B7830014A608 /* PlayButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E884FBA41EC9B7830014A608 /* PlayButton.m */; };
+		E884FBA81EC9B7B40014A608 /* IndicatorLight.m in Sources */ = {isa = PBXBuildFile; fileRef = E884FBA71EC9B7B40014A608 /* IndicatorLight.m */; };
+		E884FBAB1EC9B7F50014A608 /* ControlKnob.m in Sources */ = {isa = PBXBuildFile; fileRef = E884FBAA1EC9B7F50014A608 /* ControlKnob.m */; };
+		E884FBAE1EC9C20B0014A608 /* PlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = E884FBAD1EC9C20B0014A608 /* PlayerController.m */; };
+		E884FBB31EC9C31E0014A608 /* bass.caf in Resources */ = {isa = PBXBuildFile; fileRef = E884FBB01EC9C31E0014A608 /* bass.caf */; };
+		E884FBB41EC9C31E0014A608 /* drums.caf in Resources */ = {isa = PBXBuildFile; fileRef = E884FBB11EC9C31E0014A608 /* drums.caf */; };
+		E884FBB51EC9C31E0014A608 /* guitar.caf in Resources */ = {isa = PBXBuildFile; fileRef = E884FBB21EC9C31E0014A608 /* guitar.caf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E884FB851EC9B7150014A608 /* AudioLooper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioLooper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E884FB891EC9B7150014A608 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E884FB8B1EC9B7150014A608 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E884FB8C1EC9B7150014A608 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E884FB8E1EC9B7150014A608 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E884FB8F1EC9B7150014A608 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E884FB921EC9B7150014A608 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E884FB941EC9B7150014A608 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E884FB971EC9B7150014A608 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E884FB991EC9B7150014A608 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E884FBA01EC9B75D0014A608 /* UIColor+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Additions.h"; sourceTree = "<group>"; };
+		E884FBA11EC9B75D0014A608 /* UIColor+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Additions.m"; sourceTree = "<group>"; };
+		E884FBA31EC9B7830014A608 /* PlayButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayButton.h; sourceTree = "<group>"; };
+		E884FBA41EC9B7830014A608 /* PlayButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayButton.m; sourceTree = "<group>"; };
+		E884FBA61EC9B7B40014A608 /* IndicatorLight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndicatorLight.h; sourceTree = "<group>"; };
+		E884FBA71EC9B7B40014A608 /* IndicatorLight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndicatorLight.m; sourceTree = "<group>"; };
+		E884FBA91EC9B7F50014A608 /* ControlKnob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControlKnob.h; sourceTree = "<group>"; };
+		E884FBAA1EC9B7F50014A608 /* ControlKnob.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControlKnob.m; sourceTree = "<group>"; };
+		E884FBAC1EC9C20B0014A608 /* PlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerController.h; sourceTree = "<group>"; };
+		E884FBAD1EC9C20B0014A608 /* PlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerController.m; sourceTree = "<group>"; };
+		E884FBB01EC9C31E0014A608 /* bass.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = bass.caf; sourceTree = "<group>"; };
+		E884FBB11EC9C31E0014A608 /* drums.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = drums.caf; sourceTree = "<group>"; };
+		E884FBB21EC9C31E0014A608 /* guitar.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = guitar.caf; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E884FB821EC9B7150014A608 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E884FB7C1EC9B7150014A608 = {
+			isa = PBXGroup;
+			children = (
+				E884FB871EC9B7150014A608 /* AudioLooper */,
+				E884FB861EC9B7150014A608 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E884FB861EC9B7150014A608 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E884FB851EC9B7150014A608 /* AudioLooper.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E884FB871EC9B7150014A608 /* AudioLooper */ = {
+			isa = PBXGroup;
+			children = (
+				E884FB9F1EC9B72A0014A608 /* View */,
+				E884FB8B1EC9B7150014A608 /* AppDelegate.h */,
+				E884FB8C1EC9B7150014A608 /* AppDelegate.m */,
+				E884FB8E1EC9B7150014A608 /* ViewController.h */,
+				E884FB8F1EC9B7150014A608 /* ViewController.m */,
+				E884FB911EC9B7150014A608 /* Main.storyboard */,
+				E884FB941EC9B7150014A608 /* Assets.xcassets */,
+				E884FB961EC9B7150014A608 /* LaunchScreen.storyboard */,
+				E884FB991EC9B7150014A608 /* Info.plist */,
+				E884FB881EC9B7150014A608 /* Supporting Files */,
+				E884FBAC1EC9C20B0014A608 /* PlayerController.h */,
+				E884FBAD1EC9C20B0014A608 /* PlayerController.m */,
+			);
+			path = AudioLooper;
+			sourceTree = "<group>";
+		};
+		E884FB881EC9B7150014A608 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E884FBAF1EC9C31E0014A608 /* Loops */,
+				E884FB891EC9B7150014A608 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E884FB9F1EC9B72A0014A608 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E884FBA01EC9B75D0014A608 /* UIColor+Additions.h */,
+				E884FBA11EC9B75D0014A608 /* UIColor+Additions.m */,
+				E884FBA31EC9B7830014A608 /* PlayButton.h */,
+				E884FBA41EC9B7830014A608 /* PlayButton.m */,
+				E884FBA61EC9B7B40014A608 /* IndicatorLight.h */,
+				E884FBA71EC9B7B40014A608 /* IndicatorLight.m */,
+				E884FBA91EC9B7F50014A608 /* ControlKnob.h */,
+				E884FBAA1EC9B7F50014A608 /* ControlKnob.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E884FBAF1EC9C31E0014A608 /* Loops */ = {
+			isa = PBXGroup;
+			children = (
+				E884FBB01EC9C31E0014A608 /* bass.caf */,
+				E884FBB11EC9C31E0014A608 /* drums.caf */,
+				E884FBB21EC9C31E0014A608 /* guitar.caf */,
+			);
+			path = Loops;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E884FB841EC9B7150014A608 /* AudioLooper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E884FB9C1EC9B7150014A608 /* Build configuration list for PBXNativeTarget "AudioLooper" */;
+			buildPhases = (
+				E884FB811EC9B7150014A608 /* Sources */,
+				E884FB821EC9B7150014A608 /* Frameworks */,
+				E884FB831EC9B7150014A608 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AudioLooper;
+			productName = AudioLooper;
+			productReference = E884FB851EC9B7150014A608 /* AudioLooper.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E884FB7D1EC9B7150014A608 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Silence;
+				TargetAttributes = {
+					E884FB841EC9B7150014A608 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E884FB801EC9B7150014A608 /* Build configuration list for PBXProject "AudioLooper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E884FB7C1EC9B7150014A608;
+			productRefGroup = E884FB861EC9B7150014A608 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E884FB841EC9B7150014A608 /* AudioLooper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E884FB831EC9B7150014A608 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E884FBB51EC9C31E0014A608 /* guitar.caf in Resources */,
+				E884FBB41EC9C31E0014A608 /* drums.caf in Resources */,
+				E884FB981EC9B7150014A608 /* LaunchScreen.storyboard in Resources */,
+				E884FBB31EC9C31E0014A608 /* bass.caf in Resources */,
+				E884FB951EC9B7150014A608 /* Assets.xcassets in Resources */,
+				E884FB931EC9B7150014A608 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E884FB811EC9B7150014A608 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E884FBA81EC9B7B40014A608 /* IndicatorLight.m in Sources */,
+				E884FBAB1EC9B7F50014A608 /* ControlKnob.m in Sources */,
+				E884FB901EC9B7150014A608 /* ViewController.m in Sources */,
+				E884FBA51EC9B7830014A608 /* PlayButton.m in Sources */,
+				E884FBA21EC9B75D0014A608 /* UIColor+Additions.m in Sources */,
+				E884FB8D1EC9B7150014A608 /* AppDelegate.m in Sources */,
+				E884FBAE1EC9C20B0014A608 /* PlayerController.m in Sources */,
+				E884FB8A1EC9B7150014A608 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E884FB911EC9B7150014A608 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E884FB921EC9B7150014A608 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E884FB961EC9B7150014A608 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E884FB971EC9B7150014A608 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E884FB9A1EC9B7150014A608 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E884FB9B1EC9B7150014A608 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E884FB9D1EC9B7150014A608 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AudioLooper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.silence.AudioLooper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E884FB9E1EC9B7150014A608 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AudioLooper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.silence.AudioLooper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E884FB801EC9B7150014A608 /* Build configuration list for PBXProject "AudioLooper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E884FB9A1EC9B7150014A608 /* Debug */,
+				E884FB9B1EC9B7150014A608 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E884FB9C1EC9B7150014A608 /* Build configuration list for PBXNativeTarget "AudioLooper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E884FB9D1EC9B7150014A608 /* Debug */,
+				E884FB9E1EC9B7150014A608 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E884FB7D1EC9B7150014A608 /* Project object */;
+}
