@@ -1,0 +1,14 @@
+//
+//  BubbleCell.swift
+//  HelloAVFoundationSwift
+//
+//  Created by 杨晴贺 on 2017/5/15.
+//  Copyright © 2017年 Silence. All rights reserved.
+//
+
+import UIKit
+
+class BubbleCell: UITableViewCell {
+
+    @IBOutlet weak var messageLabel: UILabel!
+}
