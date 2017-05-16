@@ -66,12 +66,12 @@
 - (id)initWithURL:(NSURL *)url {
     self = [super init];
     if (self) {
-        _url = url;                                                         // 1
+        _url = url;
         _asset = [AVAsset assetWithURL:url];
         _filename = [url lastPathComponent];
-        _filetype = [self fileTypeForURL:url];                              // 2
-        _editable = ![_filetype isEqualToString:AVFileTypeMPEGLayer3];      // 3
-        _acceptedFormats = @[                                               // 4
+        _filetype = [self fileTypeForURL:url];
+        _editable = ![_filetype isEqualToString:AVFileTypeMPEGLayer3];
+        _acceptedFormats = @[
                              AVMetadataFormatQuickTimeMetadata,
                              AVMetadataFormatiTunesMetadata,
                              AVMetadataFormatID3Metadata
@@ -99,12 +99,12 @@
 
 - (void)prepareWithCompletionHandler:(SICompletionHandler)completionHandler {
     
-    if (self.prepared) {                                                    // 1
+    if (self.prepared) {
         completionHandler(self.prepared);
         return;
     }
     
-    self.metadata = [[SIMetadata alloc] init];                              // 2
+    self.metadata = [[SIMetadata alloc] init];
     
     NSArray *keys = @[COMMON_META_KEY, AVAILABLE_META_KEY];
     
@@ -116,16 +116,16 @@
         AVKeyValueStatus formatsStatus =
         [self.asset statusOfValueForKey:AVAILABLE_META_KEY error:nil];
         
-        self.prepared = (commonStatus == AVKeyValueStatusLoaded) &&         // 3
+        self.prepared = (commonStatus == AVKeyValueStatusLoaded) &&
         (formatsStatus == AVKeyValueStatusLoaded);
         
         if (self.prepared) {
-            for (AVMetadataItem *item in self.asset.commonMetadata) {       // 4
+            for (AVMetadataItem *item in self.asset.commonMetadata) {
                 // NSLog(@"%@: %@", item.keyString, item.value);
                 [self.metadata addMetadataItem:item withKey:item.commonKey];
             }
             
-            for (id format in self.asset.availableMetadataFormats) {        // 5
+            for (id format in self.asset.availableMetadataFormats) {
                 if ([self.acceptedFormats containsObject:format]) {
                     NSArray *items = [self.asset metadataForFormat:format];
                     for (AVMetadataItem *item in items) {
@@ -146,7 +146,7 @@
 
 - (void)saveWithCompletionHandler:(SICompletionHandler)handler {
     
-    NSString *presetName = AVAssetExportPresetPassthrough;                  // 1
+    NSString *presetName = AVAssetExportPresetPassthrough;
     AVAssetExportSession *session =
     [[AVAssetExportSession alloc] initWithAsset:self.asset
                                      presetName:presetName];
@@ -154,17 +154,17 @@
     NSURL *outputURL = [self tempURL];
     session.outputURL = outputURL;
     session.outputFileType = self.filetype;
-    session.metadata = [self.metadata metadataItems];                       // 3
+    session.metadata = [self.metadata metadataItems];
     
     [session exportAsynchronouslyWithCompletionHandler:^{
         AVAssetExportSessionStatus status = session.status;
         BOOL success = (status == AVAssetExportSessionStatusCompleted);
-        if (success) {                                                      // 4
+        if (success) {
             NSURL *sourceURL = self.url;
             NSFileManager *manager = [NSFileManager defaultManager];
             [manager removeItemAtURL:outputURL error:nil];
             [manager copyItemAtURL:sourceURL toURL:outputURL error:nil];
-            [self reset];                                                   // 5
+            [self reset];                                                   
         }
         
         if (handler) {

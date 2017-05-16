@@ -21,9 +21,9 @@
 - (id)init {
     self = [super init];
     if (self) {
-        _keyMapping = [self buildKeyMapping];                               // 1
-        _metadata = [NSMutableDictionary dictionary];                       // 2
-        _converterFactory = [[SIMetadataConverterFactory alloc] init];      // 3
+        _keyMapping = [self buildKeyMapping];
+        _metadata = [NSMutableDictionary dictionary];
+        _converterFactory = [[SIMetadataConverterFactory alloc] init];
     }
     return self;
 }
@@ -98,16 +98,16 @@
 
 - (void)addMetadataItem:(AVMetadataItem *)item withKey:(id)key {
     
-    NSString *normalizedKey = self.keyMapping[key];                         // 1
+    NSString *normalizedKey = self.keyMapping[key];
     
     if (normalizedKey) {
         
-        id <SIMetadataConverter> converter =                                // 2
+        id <SIMetadataConverter> converter =
         [self.converterFactory converterForKey:normalizedKey];
         
         id value = [converter displayValueFromMetadataItem:item];
         
-        if ([value isKindOfClass:[NSDictionary class]]) {                   // 3
+        if ([value isKindOfClass:[NSDictionary class]]) {
             NSDictionary *data = (NSDictionary *) value;
             for (NSString *currentKey in data) {
                 if (![data[currentKey] isKindOfClass:[NSNull class]]) {
@@ -118,15 +118,15 @@
             [self setValue:value forKey:normalizedKey];
         }
         
-        self.metadata[normalizedKey] = item;                                // 4
+        self.metadata[normalizedKey] = item;
     }
 }
 
 - (NSArray *)metadataItems {
     
-    NSMutableArray *items = [NSMutableArray array];                         // 1
+    NSMutableArray *items = [NSMutableArray array];
     
-    [self addMetadataItemForNumber:self.trackNumber                         // 2
+    [self addMetadataItemForNumber:self.trackNumber
                              count:self.trackCount
                          numberKey:SIMetadataKeyTrackNumber
                           countKey:SIMetadataKeyTrackCount
@@ -138,7 +138,7 @@
                           countKey:SIMetadataKeyDiscCount
                            toArray:items];
     
-    NSMutableDictionary *metaDict = [self.metadata mutableCopy];            // 6
+    NSMutableDictionary *metaDict = [self.metadata mutableCopy];
     [metaDict removeObjectForKey:SIMetadataKeyTrackNumber];
     [metaDict removeObjectForKey:SIMetadataKeyDiscNumber];
     
@@ -146,10 +146,9 @@
         
         id <SIMetadataConverter> converter = [self.converterFactory converterForKey:key] ;
         
-        id value = [self valueForKey:key];                                  // 7
+        id value = [self valueForKey:key];
         
         AVMetadataItem *item = [converter metadataItemFromDisplayValue:value withMetadataItem:metaDict[key]] ;
-        // 8
         if (item) {
             [items addObject:item];
         }
@@ -162,17 +161,17 @@
                            count:(NSNumber *)count
                        numberKey:(NSString *)numberKey
                         countKey:(NSString *)countKey
-                         toArray:(NSMutableArray *)items {                  // 3
+                         toArray:(NSMutableArray *)items {
     
     id <SIMetadataConverter> converter =
     [self.converterFactory converterForKey:numberKey];
     
-    NSDictionary *data = @{numberKey : number ?: [NSNull null],             // 4
+    NSDictionary *data = @{numberKey : number ?: [NSNull null],
                            countKey : count ?: [NSNull null]};
     
     AVMetadataItem *sourceItem = self.metadata[numberKey];
     
-    AVMetadataItem *item =                                                  // 5
+    AVMetadataItem *item =                                                  
     [converter metadataItemFromDisplayValue:data
                            withMetadataItem:sourceItem];
     if (item) {
