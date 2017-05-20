@@ -24,6 +24,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    NSArray *arr = [CIFilter filterNamesInCategory:kCICategoryBlur];
+    NSLog(@"%@",arr);
 }
 
 - (IBAction)createQR:(id)sender {
